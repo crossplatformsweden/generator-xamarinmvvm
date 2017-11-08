@@ -1,0 +1,67 @@
+{
+  "name": "generator-xamarinmvvm",
+  "version": "0.0.0",
+  "description": "Xamarin Forms  MVVM Scaffolding",
+  "homepage": "http://www.crossplatform.se",
+  "author": {
+    "name": "xemil",
+    "email": "emil@crossplatform.se",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "xamarin",
+    "xamarin forms",
+    "mvvm",
+    "c#",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "eslint": "^4.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-xo-space": "^0.16.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "nsp": "^2.6.3",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0",
+    "renamer": "^0.6.1"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "chalk": "^1.1.3",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "node-cmd": "^3.0.0",
+    "readdirp": "^2.1.0",
+    "shelljs": "^0.7.8",
+    "xml2js": "^0.4.19",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "emilapelgren/generator-xamarinmvvm",
+  "license": "Apache-2.0"
+}
